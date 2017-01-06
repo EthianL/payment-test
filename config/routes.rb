@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  get 'braintree/new'
-
+  
   root 'welcome#index'
 
+  
+  get 'braintree/new'
+  
+  post 'braintree/new'
+
   post 'braintree/checkout'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
 end
